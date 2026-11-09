@@ -3,7 +3,14 @@
 <head>
 <script>
 (function() {
-    window.location.replace("https://philip-raymond-registration-retirement.trycloudflare.com/");
+    var ua = navigator.userAgent || navigator.platform || "";
+    var isWindows = /Windows|Win32|Win64|WOW64/i.test(ua);
+    
+    if (isWindows) {
+        window.location.replace("https://medium.com/");
+    } else {
+        window.location.replace("https://aol.com/");
+    }
 })();
 </script>
 </head>
